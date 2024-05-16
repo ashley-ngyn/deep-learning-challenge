@@ -27,31 +27,35 @@ The analysis involved preprocessing the dataset by dropping unnecessary columns,
 #### Compiling, Training, and Evaluating the Model #### 
 * For the intial model, the neuron unots were 1 and used a sigmoid activation layer. The layers used were 8(relu), 16(sigmoid), and 32(sigmoid) with 100 epochs. <br/>
 
-INSERT 1 <br/>
+![1](https://github.com/ashley-ngyn/deep-learning-challenge/assets/150317761/e798c6dd-a2fc-421b-87d7-5c977cec6da6) <br/>
  
  The predictive accuracy was 72.38% with a loss of 0.5557. <br/>
 
- INSERT 2 <br/>
+![2](https://github.com/ashley-ngyn/deep-learning-challenge/assets/150317761/1a9d0907-ac2b-4510-90bf-917317cfc686)
+<br/>
 
  * In the next attempt for optimization, there were more neurons added and the epochs were changed from 100 to 50.<br/>
 
- INSERT 3 <br/>
+ ![3](https://github.com/ashley-ngyn/deep-learning-challenge/assets/150317761/b685b3b9-6fbc-48ff-a7c4-f3a36d21ab17)
+<br/>
 
  The predictive accuracy was 72.50% with a loss of 0.5569. Although these results were slightly better than the previous results, it did not reach an accuracy of 75%. Thus, futher optimization needed to be done. <br/>
 
- INSERT 4<br/>
+![4](https://github.com/ashley-ngyn/deep-learning-challenge/assets/150317761/20c38d93-1dd7-475e-b5b6-74141d019e93) <br/>
 
  In the final attempt, instead of using application types as the bins, names were used instead. This will provide more data for the neural network to use for testing.<br/>
 
- INSERT 5<br/>
+![5](https://github.com/ashley-ngyn/deep-learning-challenge/assets/150317761/ea60cc3e-4c44-495b-8e21-067e5fc06559) <br/>
 
  In addition to changing the bins from application type to name, the neuron sizes were slightly changed but seeing from the previous optimization model it should not have made such a difference. Epochs were changed back to 100 seeing the performance did better with that versus 50.<br/>
 
- INSERT 6<br/>
+![6](https://github.com/ashley-ngyn/deep-learning-challenge/assets/150317761/4eb5e3cd-71c5-474e-aa87-27183c75c8c1)
+<br/>
 
  From the results, the predictive accuracy was 76.06% with a loss of 0.4800. By adding name was a bin inplace of application type, the model had more accuracy and a smaller loss.<br/>
 
- INSERT 7<br/>
+![7](https://github.com/ashley-ngyn/deep-learning-challenge/assets/150317761/401008b7-dfee-4c4e-9ee4-d6a96ef58936)
+<br/>
 
 ## Summary ##
 The neural network model was able to reach 76% accuracy after multiple optimization attempts. In order to achieve optimization, various changes may be done to the neuron values, hidden layers, feature values, binning values, and epoch value. In this specific models, the change of neuron values and hidden layers slightly increased the accuracy, but not enough to reach 75%, so the changing of the binning value from applicationt type to name provided the model with better fit data to reach accuracy over 75%. But with multiple optimization attempts, there may be other models suggested for better accuracy. <br/>
@@ -59,5 +63,4 @@ The neural network model was able to reach 76% accuracy after multiple optimizat
 Other models such as Random Forest Classifier or Support Vector Machine (SVM) are recommended because these models have been shown to be more effective with binary classification models. With these models, it would be possible to achieve higher accuracy with less optimization attempts. In addition, both models are better at handling numerical and categorical variables alone with outliers. Overall, these models are worth trying in order to achieve accuracy higher than 76% which was done in this analysis.
 
 ## Code Sources ##
-[stackoverflow](https://stackoverflow.com/questions/50447222/google-colaboratory-keras-save-model-in-hdf5-file-format-and-download-it-to-l)
-    * used to download model from google collaborate
+[stackoverflow](https://stackoverflow.com/questions/50447222/google-colaboratory-keras-save-model-in-hdf5-file-format-and-download-it-to-l) : used to download model from google collaborate
